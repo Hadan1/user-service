@@ -13,11 +13,11 @@ public class Main {
         service.createUser("Иван Иванов", "ivan@example.com", 30);
 
         // Обновляем пользователя по ID
-        Long userIdToUpdate=1L; // замените на актуальный ID
+        Long userIdToUpdate=1L;
         service.updateUser(userIdToUpdate, "Иван Иванович", "ivanov@example.com", 31);
 
         // Удаляем пользователя по ID
-        Long userIdToDelete=1L; // замените на актуальный ID
+        Long userIdToDelete=1L;
         service.deleteUser(userIdToDelete);
 
         // Получение пользователя по ID

@@ -1,4 +1,4 @@
-package aston.repository;
+package repository;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
