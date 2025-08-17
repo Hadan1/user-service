@@ -1,33 +1,16 @@
-package aston;
+package repository;
 
-import aston.repository.HibernateUtil;
-import aston.repository.User;
-import aston.repository.UserService;
+import service.UserConsole;
+import service.UserService;
+
+import java.util.Scanner;
 
 public class Main {
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final UserService userService = new UserService();
+    private static final UserConsole userConsole = new UserConsole(scanner, userService);
 
     public static void main(String[] args) {
-
-        UserService service = new UserService();
-        // Создаем пользователя
-        service.createUser("Иван Иванов", "ivan@example.com", 30);
-
-        // Обновляем пользователя по ID
-        Long userIdToUpdate=1L;
-        service.updateUser(userIdToUpdate, "Иван Иванович", "ivanov@example.com", 31);
-
-        // Удаляем пользователя по ID
-        Long userIdToDelete=1L;
-        service.deleteUser(userIdToDelete);
-
-        // Получение пользователя по ID
-        User user = service.getUserById(1L);
-        if (user != null) {
-            System.out.println("Найден пользователь: " + user.getName());
-        } else {
-            System.out.println("Пользователь не найден");
-        }
-        HibernateUtil.getSessionFactory().close();
-
+        userConsole.run();
     }
 }

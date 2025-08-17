@@ -7,8 +7,9 @@
         <property name="connection.url">jdbc:postgresql://localhost:5432/postgres</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">5545qwEE</property>
-        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <mapping class="repository.User"/>
     </session-factory>
 </hibernate-configuration>
