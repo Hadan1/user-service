@@ -1,4 +1,4 @@
-package aston.repository;
+package repository;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;

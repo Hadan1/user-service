@@ -1,10 +1,10 @@
-package aston.repository;
+package repository;
 
+import hibernate.starter.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class UserService {
 
