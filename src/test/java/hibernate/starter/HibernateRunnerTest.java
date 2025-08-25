@@ -3,7 +3,7 @@ package hibernate.starter;
 import repository.User;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.Table;
+import jakarta.persistence.Table;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -31,6 +31,4 @@ class HibernateRunnerTest {
                 .map(table -> table.schema() + "." + table.name())
                 .orElse(user.getClass().getName());
     }
-
-
 }

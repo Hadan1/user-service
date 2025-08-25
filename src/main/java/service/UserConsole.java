@@ -1,6 +1,8 @@
 package service;
 
 import repository.User;
+
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -65,7 +67,8 @@ public class UserConsole {
         System.out.print("Введите возраст: ");
         int age = getIntInput();
 
-        userService.createUser(name, email, age);
+        User user = new User(name, email, age, LocalDateTime.now());
+        userService.createUser(user);
         System.out.println("Пользователь создан");
     }
 
@@ -100,8 +103,8 @@ public class UserConsole {
 
         System.out.print("Введите возраст: ");
         int age = getIntInput();
-
-        userService.updateUser(id, name, email, age);
+        User newUser =  new User(name, email, age, LocalDateTime.now());
+        userService.updateUser(newUser);
         System.out.println("Данные обновлены");
     }
 

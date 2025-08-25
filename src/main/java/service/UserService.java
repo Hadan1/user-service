@@ -2,25 +2,34 @@ package service;
 
 import exceptions.UserException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import repository.User;
+import repository.UserDao;
 
 import java.time.LocalDateTime;
 
 
-public class UserService {
+public class UserService implements UserDao {
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
+    private final SessionFactory sessionFactory;
 
-    public void createUser(String name, String email, Integer age) {
+    public UserService(Session session) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    public UserService() {
+        this(HibernateUtil.getSessionFactory());
+    }
+
+    @Override
+    public void createUser(User user) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-
-            User user = new User(name, email, age, LocalDateTime.now());
-            session.save(user);
-
+            session.persist(user);
             transaction.commit();
             System.out.println("Создан пользователь ID=" + user.getId());
             logger.info("Успешное создание");
@@ -31,10 +40,11 @@ public class UserService {
         }
     }
 
+    @Override
     public User getUserById(Long id) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             logger.info("Успешное получение");
-            return session.get(User.class, id);
+            return session.find(User.class, id);
         }
         catch (Exception e) {
             logger.error("Ошибка получения");
@@ -42,17 +52,17 @@ public class UserService {
         }
     }
 
-    public void updateUser(Long id, String newName, String newEmail, Integer newAge) {
+    @Override
+    public void updateUser(User user) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
 
-            User user = session.get(User.class, id);
             if (user != null) {
-                user.setName(newName);
-                user.setEmail(newEmail);
-                user.setAge(newAge);
-                session.update(user);
+                user.setName(user.getName());
+                user.setEmail(user.getEmail());
+                user.setAge(user.getAge());
+                session.merge(user);
                 transaction.commit();
                 System.out.println("Пользователь обновлен");
                 logger.info("Успешное обновление");
@@ -66,14 +76,15 @@ public class UserService {
         }
     }
 
+    @Override
     public void deleteUser(Long id) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
 
-            User user = session.get(User.class, id);
+            User user = session.find(User.class, id);
             if (user != null) {
-                session.delete(user);
+                session.remove(user);
                 transaction.commit();
                 System.out.println("Пользователь удален");
                 logger.info("Успешное удаление");
