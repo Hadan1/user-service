@@ -1,4 +1,4 @@
-package service;
+package utils;
 
 import lombok.Getter;
 import org.hibernate.SessionFactory;
@@ -20,6 +20,12 @@ public class HibernateUtil {
         } catch (Exception e) {
             e.printStackTrace();
             throw new ExceptionInInitializerError("Ошибка при создании SessionFactory");
+        }
+    }
+
+    public static void shutdown() {
+        if (sessionFactory != null && !sessionFactory.isClosed()) {
+            sessionFactory.close();
         }
     }
 

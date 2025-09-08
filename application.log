@@ -10,8 +10,8 @@
 2025-08-17 22:46:39.337 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@655a01d8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-08-17 22:46:39.372 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f76c2cc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-08-17 22:46:39.419 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-08-17 22:46:39.504 [main] INFO  service.UserService - Успешное создание
-2025-08-17 22:50:45.236 [main] INFO  service.UserService - Успешное создание
+2025-08-17 22:46:39.504 [main] INFO  service.UserDAO - Успешное создание
+2025-08-17 22:50:45.236 [main] INFO  service.UserDAO - Успешное создание
 2025-08-17 22:51:01.994 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
 2025-08-17 22:51:02.147 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
 2025-08-17 22:51:02.347 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
@@ -24,4 +24,521 @@
 2025-08-17 22:51:03.070 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@c29fe36] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-08-17 22:51:03.078 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@306f6f1d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-08-17 22:51:03.090 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-08-17 22:51:03.159 [main] INFO  service.UserService - Успешное создание11
+2025-08-17 22:51:03.159 [main] INFO  service.UserDAO - Успешное создание11
+2025-09-08 00:51:35.969 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 00:51:35.975 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 00:51:35.997 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 00:51:36.305 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Program Files (x86)\Common Files\Oracle\Java\java8path, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0\, C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\WireGuard\, C:\Program Files\PuTTY\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Users\Dmitry\AppData\Local\Microsoft\WindowsApps, , C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2.2\bin, , C:\Users\Dmitry\AppData\Local\JetBrains\IntelliJ IDEA 2025.1.3\bin])
+2025-09-08 00:51:36.306 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2025-09-08 00:52:06.816 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 00:52:06.823 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 00:52:06.850 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 00:52:07.086 [main] INFO  o.t.d.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\Program Files (x86)\Common Files\Oracle\Java\java8path, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0\, C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\WireGuard\, C:\Program Files\PuTTY\, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Users\Dmitry\AppData\Local\Microsoft\WindowsApps, , C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.2.2\bin, , C:\Users\Dmitry\AppData\Local\JetBrains\IntelliJ IDEA 2025.1.3\bin])
+2025-09-08 00:52:07.087 [main] ERROR o.t.d.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2025-09-08 03:55:19.331 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 03:55:19.438 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 03:55:20.199 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 03:55:20.584 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 03:55:21.516 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 03:55:21.687 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 03:56:36.717 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 03:56:36.750 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 03:56:37.264 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 03:56:37.743 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 03:56:38.455 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 03:56:38.595 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 04:08:03.378 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 04:08:03.412 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 04:08:03.935 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 04:08:04.443 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 04:08:05.219 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 04:08:05.351 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 04:10:47.036 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 04:10:47.067 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 04:10:47.579 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 04:10:48.089 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 04:10:48.862 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 04:10:48.987 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 04:25:59.766 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 04:25:59.814 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 04:26:00.556 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 04:26:01.015 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 04:26:01.923 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 04:26:02.093 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 04:28:34.249 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 04:28:34.295 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 04:28:34.980 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 04:28:35.448 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 04:28:36.443 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 04:28:36.642 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 04:35:23.089 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 04:35:23.130 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 04:35:23.633 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 04:35:23.985 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 04:35:24.736 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 04:35:24.865 [main] INFO  service.UserDAO - Успешное создание
+2025-09-08 05:03:47.163 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 05:03:47.195 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 05:03:47.697 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 05:03:48.082 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 05:03:48.801 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 05:03:48.932 [main] INFO  repository.UserDAO - Успешное создание
+2025-09-08 06:39:49.108 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:39:49.114 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:44:23.383 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:44:23.388 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:44:23.409 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 06:44:24.046 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 06:44:24.049 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 06:44:24.075 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 06:44:24.197 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling docker image: testcontainers/ryuk:0.12.0. Please be patient; this may take some time but only needs to be done once.
+2025-09-08 06:44:26.518 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Starting to pull image
+2025-09-08 06:44:26.544 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2025-09-08 06:44:28.117 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:30.617 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (6 MB/? MB)
+2025-09-08 06:44:30.919 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  1 pending,  2 downloaded,  1 extracted, (6 MB/? MB)
+2025-09-08 06:44:31.117 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  1 pending,  2 downloaded,  2 extracted, (6 MB/? MB)
+2025-09-08 06:44:33.215 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (9 MB/10 MB)
+2025-09-08 06:44:33.283 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (9 MB/10 MB)
+2025-09-08 06:44:33.289 [docker-java-stream--812419152] INFO  tc.testcontainers/ryuk:0.12.0 - Pull complete. 3 layers, pulled in 6s (downloaded 9 MB at 1 MB/s)
+2025-09-08 06:44:33.289 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Image testcontainers/ryuk:0.12.0 pull took PT9.091355S
+2025-09-08 06:44:33.381 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 06:44:33.740 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: a26bc2845c4f504778fc58819ffc998ff692ba05bc67a3635cf2d4e115c3f3c7
+2025-09-08 06:44:34.866 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT1.4851776S
+2025-09-08 06:44:34.873 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 06:44:34.874 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 06:44:34.874 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 06:44:34.881 [main] INFO  tc.postgres:16 - Pulling docker image: postgres:16. Please be patient; this may take some time but only needs to be done once.
+2025-09-08 06:44:36.108 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Starting to pull image
+2025-09-08 06:44:36.109 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2025-09-08 06:44:37.599 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers: 13 pending,  1 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.697 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers: 12 pending,  2 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.698 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers: 11 pending,  3 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.699 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers: 10 pending,  4 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.797 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  9 pending,  5 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.799 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  8 pending,  6 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.800 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  7 pending,  7 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:37.801 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  6 pending,  8 downloaded,  0 extracted, (0 bytes/? MB)
+2025-09-08 06:44:38.298 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  5 pending,  9 downloaded,  0 extracted, (1 MB/? MB)
+2025-09-08 06:44:38.798 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  4 pending, 10 downloaded,  0 extracted, (6 MB/? MB)
+2025-09-08 06:44:42.396 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  3 pending, 11 downloaded,  0 extracted, (26 MB/? MB)
+2025-09-08 06:44:43.595 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  2 pending, 12 downloaded,  0 extracted, (29 MB/? MB)
+2025-09-08 06:44:58.595 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  0 extracted, (72 MB/? MB)
+2025-09-08 06:45:00.299 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  1 extracted, (74 MB/? MB)
+2025-09-08 06:45:00.312 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  2 extracted, (74 MB/? MB)
+2025-09-08 06:45:00.604 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  3 extracted, (74 MB/? MB)
+2025-09-08 06:45:00.704 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  4 extracted, (75 MB/? MB)
+2025-09-08 06:45:01.205 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  5 extracted, (75 MB/? MB)
+2025-09-08 06:45:01.305 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  6 extracted, (75 MB/? MB)
+2025-09-08 06:45:01.307 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  7 extracted, (75 MB/? MB)
+2025-09-08 06:45:01.395 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  1 pending, 13 downloaded,  8 extracted, (76 MB/? MB)
+2025-09-08 06:45:57.491 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded,  8 extracted, (152 MB/152 MB)
+2025-09-08 06:46:00.900 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded,  9 extracted, (152 MB/152 MB)
+2025-09-08 06:46:00.902 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded, 10 extracted, (152 MB/152 MB)
+2025-09-08 06:46:00.994 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded, 11 extracted, (152 MB/152 MB)
+2025-09-08 06:46:00.995 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded, 12 extracted, (152 MB/152 MB)
+2025-09-08 06:46:00.996 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded, 13 extracted, (152 MB/152 MB)
+2025-09-08 06:46:01.080 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pulling image layers:  0 pending, 14 downloaded, 14 extracted, (152 MB/152 MB)
+2025-09-08 06:46:01.086 [docker-java-stream-1168196549] INFO  tc.postgres:16 - Pull complete. 14 layers, pulled in 84s (downloaded 152 MB at 1 MB/s)
+2025-09-08 06:46:01.086 [main] INFO  tc.postgres:16 - Image postgres:16 pull took PT1M26.204781S
+2025-09-08 06:46:01.194 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 06:46:02.503 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: d85d078224cd664e9f9224566a47f72f89d71ed791ffa6945f1687ff6ae08adc
+2025-09-08 06:46:05.044 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT3.8508181S
+2025-09-08 06:46:05.045 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:60142/testdb?loggerLevel=OFF)
+2025-09-08 06:46:05.137 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 06:46:05.168 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 06:46:05.645 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 06:46:05.961 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 06:46:07.000 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 06:58:22.212 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:58:22.218 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:58:22.242 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 06:58:22.497 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 06:58:22.780 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 06:58:22.781 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 06:58:22.808 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 06:58:22.930 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 06:58:23.206 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 6efa6fcf7d20c5914135742c1d8eaac9152827fc54283ebcf85f02236b468d8c
+2025-09-08 06:58:23.941 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT1.0113328S
+2025-09-08 06:58:23.949 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 06:58:23.950 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 06:58:23.950 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 06:58:23.951 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 06:58:24.112 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 2d0b930d32037f5c1a8e16e1e6dad181a84ee4fb3a427f2c0e3f6cb7f98c75e6
+2025-09-08 06:58:26.617 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.6656645S
+2025-09-08 06:58:26.618 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:62143/testdb?loggerLevel=OFF)
+2025-09-08 06:58:26.696 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 06:58:26.726 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 06:58:27.244 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 06:58:27.641 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 06:58:28.645 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 06:58:41.294 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:58:41.301 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:58:41.331 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 06:58:41.570 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 06:58:41.846 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 06:58:41.847 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 06:58:41.873 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 06:58:42.004 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 06:58:42.282 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 6b405852bd01489f593063766091ed06077dc7061f68737edfe22020aeb71e90
+2025-09-08 06:58:42.823 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.8190881S
+2025-09-08 06:58:42.830 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 06:58:42.831 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 06:58:42.831 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 06:58:42.832 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 06:58:43.001 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: decc027d7ceda3ca047932a2429733bd883b9bc35bea3509811d555b854ec6ca
+2025-09-08 06:58:45.073 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.241504S
+2025-09-08 06:58:45.074 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:62164/testdb?loggerLevel=OFF)
+2025-09-08 06:58:45.150 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 06:58:45.177 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 06:58:45.679 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 06:58:45.962 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 06:58:46.984 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 06:59:00.756 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:59:00.765 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:59:00.785 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 06:59:01.021 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 06:59:01.335 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 06:59:01.337 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 06:59:01.364 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 06:59:01.485 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 06:59:01.764 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: e46c1e48f30227e4169c09fc90e1b977eec68310a33bb1f9856fb5c8ebff002d
+2025-09-08 06:59:02.258 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.7726277S
+2025-09-08 06:59:02.265 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 06:59:02.265 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 06:59:02.265 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 06:59:02.266 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 06:59:02.418 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 753e9a901f524b1d5a6efd486171d40f7078968c4321799c4040b75047548db0
+2025-09-08 06:59:04.489 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.2229487S
+2025-09-08 06:59:04.490 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:62179/testdb?loggerLevel=OFF)
+2025-09-08 06:59:04.566 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 06:59:04.594 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 06:59:05.089 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 06:59:05.493 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 06:59:06.475 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 06:59:22.138 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 06:59:22.146 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 06:59:22.171 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 06:59:22.416 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 06:59:22.696 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 06:59:22.697 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 06:59:22.722 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 06:59:22.841 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 06:59:23.114 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: f2fdb7e3b008133e66349753e45b5991d233f800fbbac7cb7a846a6a1694d979
+2025-09-08 06:59:23.628 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.7861036S
+2025-09-08 06:59:23.635 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 06:59:23.635 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 06:59:23.636 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 06:59:23.636 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 06:59:23.786 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 8c2c4a6c00c061e726b967bfdf336bff74cebee1182a1bbfb579632fdbd61107
+2025-09-08 06:59:25.874 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.2380771S
+2025-09-08 06:59:25.874 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:62193/testdb?loggerLevel=OFF)
+2025-09-08 06:59:25.951 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 06:59:25.980 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 06:59:26.478 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 06:59:26.771 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 06:59:27.743 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 07:09:12.500 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 07:09:12.507 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 07:09:12.532 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 07:09:12.779 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 07:09:13.051 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 07:09:13.052 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 07:09:13.076 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 07:09:13.204 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 07:09:13.480 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 12a8f06561007ed4f26b9696a24c84b34e2e24b4a850ec2f34a422016fda07fa
+2025-09-08 07:09:14.156 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.951531S
+2025-09-08 07:09:14.165 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 07:09:14.166 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 07:09:14.167 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 07:09:14.168 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 07:09:14.328 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: ec2d7da8bfb85337807bf58a1feddbe735205dbe8345735efdc1b60a43be6b24
+2025-09-08 07:09:16.848 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.6806741S
+2025-09-08 07:09:16.849 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:55212/testdb?loggerLevel=OFF)
+2025-09-08 07:09:16.925 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 07:09:16.960 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 07:09:17.491 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 07:09:17.774 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 07:09:18.764 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 07:09:18.955 [main] INFO  repository.UserDAO - Успешное получение
+2025-09-08 07:11:05.352 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 07:11:05.359 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 07:11:05.385 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 07:11:05.631 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 07:11:06.005 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 07:11:06.007 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 07:11:06.033 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 07:11:06.156 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 07:11:06.420 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 1386688b85fd393fd4bfb76eff3f840bf23620f749b2fca852eda1a74488a617
+2025-09-08 07:11:07.119 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.9634508S
+2025-09-08 07:11:07.127 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 07:11:07.127 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 07:11:07.128 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 07:11:07.128 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 07:11:07.291 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 311a708bfce4181e46fb5ca6b6c8b9409d638550eeea226f3e2d2eb39cb058f8
+2025-09-08 07:11:09.793 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.6651856S
+2025-09-08 07:11:09.794 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:55274/testdb?loggerLevel=OFF)
+2025-09-08 07:11:09.870 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 07:11:09.898 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 07:11:10.386 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 07:11:10.671 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 07:11:11.660 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 07:11:11.841 [main] INFO  repository.UserDAO - Успешное получение
+2025-09-08 07:11:11.904 [main] INFO  repository.UserDAO - Успешное удаление
+2025-09-08 07:11:11.914 [main] INFO  repository.UserDAO - Успешное получение
+2025-09-08 07:11:11.936 [main] INFO  repository.UserDAO - Успешное обновление
+2025-09-08 07:12:39.215 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-09-08 07:12:39.221 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-09-08 07:12:39.246 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 1.21.3
+2025-09-08 07:12:39.485 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-09-08 07:12:39.854 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-09-08 07:12:39.855 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-09-08 07:12:39.879 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 28.3.3
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15953 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-09-08 07:12:40.003 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-09-08 07:12:40.269 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 7d18fa6ee53d30bacdb5c0e697813642c23b8847ea5337b0ced82532301989a8
+2025-09-08 07:12:40.996 [main] INFO  tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.9922897S
+2025-09-08 07:12:41.002 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-09-08 07:12:41.002 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2025-09-08 07:12:41.003 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-09-08 07:12:41.003 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2025-09-08 07:12:41.152 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 4b213e118a956cf02a1cd679ff62764e1d67e71abc9f7093a67c215031e9cdd5
+2025-09-08 07:12:43.669 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT2.6660304S
+2025-09-08 07:12:43.670 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:55313/testdb?loggerLevel=OFF)
+2025-09-08 07:12:43.750 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.0.Final
+2025-09-08 07:12:43.777 [main] WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2025-09-08 07:12:44.275 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-09-08 07:12:44.562 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.5
+	Default catalog/schema: postgres/public
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: none
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-09-08 07:12:45.572 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08 07:12:45.772 [main] INFO  repository.UserDAO - Успешное получение
+2025-09-08 07:12:45.809 [main] INFO  repository.UserDAO - Успешное создание
+2025-09-08 07:12:45.828 [main] INFO  repository.UserDAO - Успешное удаление
+2025-09-08 07:12:45.839 [main] INFO  repository.UserDAO - Успешное получение
+2025-09-08 07:12:45.862 [main] INFO  repository.UserDAO - Успешное обновление

@@ -1,19 +1,19 @@
 package service;
 
-import repository.User;
+import entity.User;
+import repository.UserDAO;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Scanner;
 
 public class UserConsole {
     private final Scanner scanner;
-    private final UserService userService;
+    private final UserDAO userDAO;
     private boolean running = true;
 
-    public UserConsole(Scanner scanner, UserService userService) {
+    public UserConsole(Scanner scanner, UserDAO userDAO) {
         this.scanner = scanner;
-        this.userService = userService;
+        this.userDAO = userDAO;
     }
 
     public void run() {
@@ -67,16 +67,16 @@ public class UserConsole {
         System.out.print("Введите возраст: ");
         int age = getIntInput();
 
-        User user = new User(name, email, age, LocalDateTime.now());
-        userService.createUser(user);
-        System.out.println("Пользователь создан");
+        User user = new User(name, email, age);
+        userDAO.save(user);
+        // сообщение о успешном создании выводится в консоль в блоке try-catch в UserService
     }
 
     private void findUserById() {
         System.out.print("Введите ID пользователя: ");
         Long id = getLongInput();
 
-        Optional<User> user = Optional.ofNullable(userService.getUserById(id));
+        Optional<User> user = userDAO.getById(id);
         user.ifPresentOrElse(
                 u -> System.out.println("Найден пользователь: " + u),
                 () -> System.out.println("Пользователь с ID " + id + " не найден")
@@ -87,7 +87,7 @@ public class UserConsole {
         System.out.print("Введите ID пользователя для обновления: ");
         Long id = getLongInput();
 
-        Optional<User> optionalUser = Optional.ofNullable(userService.getUserById(id));
+        Optional<User> optionalUser = userDAO.getById(id);
         if (optionalUser.isEmpty()) {
             System.out.println("Пользователь не найден");
             return;
@@ -103,15 +103,13 @@ public class UserConsole {
 
         System.out.print("Введите возраст: ");
         int age = getIntInput();
-        User newUser =  new User(name, email, age, LocalDateTime.now());
-        userService.updateUser(newUser);
-        System.out.println("Данные обновлены");
+        User newUser =  new User(name, email, age);
+        userDAO.update(newUser);
     }
 
     private void deleteUser() {
         System.out.print("Введите ID пользователя для удаления: ");
         Long id = getLongInput();
-        userService.deleteUser(id);
-        System.out.println("Пользователь удалён");
+        userDAO.delete(id);
     }
 }
